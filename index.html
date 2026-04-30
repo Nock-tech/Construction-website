@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idoko Contech - Construction Excellence</title>
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="container">
+      <div class="logo">🏗️ Idoko Contech</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#features">About</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html" class="btn">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Idoko Contech Construction</h1>
+      <p>Building Excellence, One Project at a Time</p>
+      <p style="font-size: 16px; margin-top: 15px;">Premium construction services for residential, commercial, and industrial projects</p>
+      <div style="margin-top: 30px;">
+        <a href="register.html" class="btn">Get Started</a>
+        <a href="#services" class="btn btn-primary" style="margin-left: 15px;">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slideshow Section -->
+  <section class="slideshow-section">
+    <div class="slideshow-container">
+      <div class="slideshow-wrapper">
+        <button class="slideshow-button prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="slideshow-slides">
+          <div class="slideshow-slide fade">
+            <img src="public/images/constr. image 1.jpg" alt="Construction Project 1">
+          </div>
+          <div class="slideshow-slide fade">
+            <img src="public/images/constr. image 3.jpg" alt="Construction Project 3">
+          </div>
+          <div class="slideshow-slide fade">
+            <img src="public/images/constr. image 4.jpg" alt="Construction Project 4">
+          </div>
+          <div class="slideshow-slide fade">
+            <img src="public/images/constr. image 5.jpg" alt="Construction Project 5">
+          </div>
+          <div class="slideshow-slide fade">
+            <img src="public/images/constr. image 6.jpg" alt="Construction Project 6">
+          </div>
+        </div>
+        <button class="slideshow-button next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+      <!-- Navigation dots -->
+      <div class="slideshow-dots">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Why Choose Idoko Contech?</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">✓</div>
+          <h3>Expert Team</h3>
+          <p>Experienced engineers and contractors with 15+ years in the industry. Our team is dedicated to delivering excellence in every project.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3>Modern Technology</h3>
+          <p>We utilize cutting-edge construction technology and project management tools to ensure efficient and quality delivery.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Safety First</h3>
+          <p>Safety is our top priority. We comply with all local and international safety standards on every project site.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3>Competitive Pricing</h3>
+          <p>We offer transparent pricing with no hidden costs. Get the best value for your investment in quality construction.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⏱️</div>
+          <h3>On-Time Delivery</h3>
+          <p>We understand the importance of meeting deadlines. Our project management ensures timely completion.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌱</div>
+          <h3>Sustainability</h3>
+          <p>We are committed to sustainable and eco-friendly construction practices that benefit the environment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>🏢 Commercial Construction</h3>
+          <p>We build modern office spaces, shopping centers, and commercial complexes designed for productivity and efficiency. Our commercial projects include structural design, interior fit-outs, and project management.</p>
+        </div>
+        <div class="service-card">
+          <h3>🏠 Residential Projects</h3>
+          <p>From single-family homes to multi-unit residential complexes, we create beautiful and durable living spaces. We specialize in luxury residential developments with modern amenities.</p>
+        </div>
+        <div class="service-card">
+          <h3>🏭 Industrial Construction</h3>
+          <p>Heavy-duty construction for factories, warehouses, and industrial facilities. We handle complex requirements including specialized foundations and structural systems.</p>
+        </div>
+        <div class="service-card">
+          <h3>🔧 Renovation & Remodeling</h3>
+          <p>Transform existing structures with our renovation services. We handle everything from minor updates to complete structural overhauls with minimal disruption.</p>
+        </div>
+        <div class="service-card">
+          <h3>📐 Design Consultation</h3>
+          <p>Our architectural and engineering consultants provide expert guidance on project planning, design optimization, and feasibility studies.</p>
+        </div>
+        <div class="service-card">
+          <h3>🔍 Project Management</h3>
+          <p>Full project oversight from conception to completion. We manage budgets, schedules, quality control, and ensure stakeholder communication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section style="background-color: var(--primary-color); color: white; padding: 60px 20px; text-align: center;">
+    <div class="container">
+      <h2 class="section-title" style="color: white;">Our Track Record</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+        <div>
+          <h3 style="font-size: 42px; color: var(--secondary-color); margin-bottom: 10px;">150+</h3>
+          <p>Completed Projects</p>
+        </div>
+        <div>
+          <h3 style="font-size: 42px; color: var(--secondary-color); margin-bottom: 10px;">200+</h3>
+          <p>Satisfied Clients</p>
+        </div>
+        <div>
+          <h3 style="font-size: 42px; color: var(--secondary-color); margin-bottom: 10px;">15+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div>
+          <h3 style="font-size: 42px; color: var(--secondary-color); margin-bottom: 10px;">100%</h3>
+          <p>Quality Assurance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section style="background-color: var(--bg-light); padding: 60px 20px; text-align: center;">
+    <div class="container">
+      <h2 style="font-size: 36px; color: var(--primary-color); margin-bottom: 20px;">Ready to Start Your Project?</h2>
+      <p style="font-size: 18px; margin-bottom: 30px;">Register now to get access to our latest projects and request a quote</p>
+      <a href="register.html" class="btn">Create Account</a>
+      <a href="login.html" class="btn btn-primary" style="margin-left: 15px;">Login to Portal</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <h3 style="color: var(--secondary-color); margin-bottom: 15px;">Idoko Contech Construction</h3>
+      <p>Building dreams, Creating futures</p>
+      <p>📞 +234 (0) 700 000 0000 | 📧 info@idokocontech.com | 📍 Lagos, Nigeria</p>
+      <p style="margin-top: 20px; font-size: 14px;">© 2026 Idoko Contech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Exit Intent Modal -->
+  <div id="exitModal" class="exit-modal">
+    <div class="exit-modal-content">
+      <button class="exit-modal-close" onclick="closeExitModal()">&times;</button>
+      <div class="exit-modal-body">
+        <div class="exit-modal-offer">
+          <h2>Wait! Don't Go Yet! 🎉</h2>
+          <p class="juicy-deal">Get <span style="color: var(--secondary-color); font-weight: bold;">20% OFF</span> on your first construction project!</p>
+          <p style="font-size: 14px; margin: 10px 0;">Limited time offer - Valid this month only!</p>
+        </div>
+        <div class="exit-modal-form">
+          <h3>Get Your Exclusive Discount</h3>
+          <form onsubmit="handleExitFormSubmit(event)">
+            <div class="form-group">
+              <input type="text" id="exitName" placeholder="Your Full Name" required>
+            </div>
+            <div class="form-group">
+              <belinput type="email" id="exitEmail" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="exitPhone" placeholder="Your Phone Number" required>
+            </div>
+            <div class="form-group">
+              <textarea id="exitMessage" placeholder="Tell us about your project..." rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn" style="width: 100%; margin-top: 15px;">Claim Your 20% Discount!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="public/js/script.js"></script>
+</body>
+</html>

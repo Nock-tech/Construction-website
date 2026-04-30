@@ -1,0 +1,38 @@
+{
+  "name": "idoko-contech-website",
+  "version": "1.0.0",
+  "description": "Professional website for Idoko Contech Construction Company with home, login, and registration pages",
+  "main": "index.html",
+  "scripts": {
+    "start": "Open index.html in your web browser",
+    "dev": "Use any local server (e.g., Python: python -m http.server 8000, or VS Code Live Server extension)"
+  },
+  "keywords": [
+    "construction",
+    "company",
+    "website",
+    "responsive",
+    "authentication"
+  ],
+  "author": "Idoko Contech",
+  "license": "Proprietary",
+  "pages": {
+    "home": "index.html",
+    "login": "login.html",
+    "register": "register.html",
+    "dashboard": "dashboard.html"
+  },
+  "technologies": {
+    "frontend": [
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6)"
+    ],
+    "storage": "localStorage (demo only)"
+  },
+  "structure": {
+    "html": "Website pages",
+    "css": "Styling and responsive design",
+    "js": "Form validation and authentication logic"
+  }
+}

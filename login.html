@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Idoko Contech</title>
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="container">
+      <div class="logo">🏗️ Idoko Contech</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="register.html" class="btn">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Portal Login</h1>
+      <p>Access your Idoko Contech account</p>
+    </div>
+  </section>
+
+  <!-- Login Form -->
+  <div class="form-container">
+    <h2 style="color: var(--primary-color); margin-bottom: 10px; text-align: center;">Sign In</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 30px;">Log in to your account to access projects and services</p>
+    
+    <div id="message"></div>
+
+    <form onsubmit="handleLogin(event)">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Enter your email address"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          placeholder="Enter your password"
+          required
+        >
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <label style="display: flex; align-items: center; margin: 0;">
+          <input type="checkbox" style="width: 20px; margin-right: 8px;">
+          <span>Remember me</span>
+        </label>
+        <a href="#" style="font-size: 14px;">Forgot password?</a>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn" style="width: 100%;">Login</button>
+      </div>
+    </form>
+
+    <div class="form-link">
+      Don't have an account? <a href="register.html">Register here</a>
+    </div>
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="popupModal" class="popup-modal">
+    <div class="popup-content">
+      <div class="popup-icon">✓</div>
+      <h2 id="popupTitle" class="popup-title">Login Successful!</h2>
+      <p id="popupMessage" class="popup-message">Redirecting to your dashboard...</p>
+      <button onclick="closePopup()" class="btn" style="margin-top: 20px;">OK</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <h3 style="color: var(--secondary-color); margin-bottom: 15px;">Idoko Contech Construction</h3>
+      <p>Building dreams, Creating futures</p>
+      <p>📞 +234 (0) 700 000 0000 | 📧 info@idokocontech.com | 📍 Lagos, Nigeria</p>
+      <p style="margin-top: 20px; font-size: 14px;">© 2026 Idoko Contech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="public/js/script.js"></script>
+</body>
+</html>

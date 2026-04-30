@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Idoko Contech</title>
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="container">
+      <div class="logo">🏗️ Idoko Contech</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li id="userInfo" style="margin-left: auto;"></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Your Dashboard</h1>
+      <p>Manage your projects and services</p>
+    </div>
+  </section>
+
+  <!-- Dashboard Content -->
+  <section style="padding: 60px 20px;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 40px;">
+        <!-- Stats Cards -->
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Active Projects</h3>
+          <p style="font-size: 32px; color: var(--primary-color); margin: 10px 0;">3</p>
+          <p style="font-size: 14px; color: #666;">Projects in progress</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✓</div>
+          <h3>Completed Projects</h3>
+          <p style="font-size: 32px; color: var(--secondary-color); margin: 10px 0;">12</p>
+          <p style="font-size: 14px; color: #666;">Successfully delivered</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3>Messages</h3>
+          <p style="font-size: 32px; color: var(--primary-color); margin: 10px 0;">5</p>
+          <p style="font-size: 14px; color: #666;">New messages from team</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📅</div>
+          <h3>Upcoming Meetings</h3>
+          <p style="font-size: 32px; color: var(--secondary-color); margin: 10px 0;">2</p>
+          <p style="font-size: 14px; color: #666;">Scheduled this week</p>
+        </div>
+      </div>
+
+      <!-- Recent Projects Section -->
+      <h2 class="section-title">Recent Projects</h2>
+      <div style="background: white; border-radius: 8px; box-shadow: var(--shadow); overflow: hidden;">
+        <table style="width: 100%; border-collapse: collapse;">
+          <thead>
+            <tr style="background-color: var(--primary-color); color: white;">
+              <th style="padding: 15px; text-align: left;">Project Name</th>
+              <th style="padding: 15px; text-align: left;">Type</th>
+              <th style="padding: 15px; text-align: left;">Status</th>
+              <th style="padding: 15px; text-align: left;">Progress</th>
+              <th style="padding: 15px; text-align: left;">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #ddd;">
+              <td style="padding: 15px;">Commercial Plaza Complex</td>
+              <td style="padding: 15px;">Commercial</td>
+              <td style="padding: 15px;"><span style="background: #fff3cd; color: #856404; padding: 5px 10px; border-radius: 3px;">In Progress</span></td>
+              <td style="padding: 15px;">75%</td>
+              <td style="padding: 15px;"><a href="#" style="color: var(--primary-color); font-weight: bold;">View →</a></td>
+            </tr>
+            <tr style="border-bottom: 1px solid #ddd;">
+              <td style="padding: 15px;">Modern Residential Estate</td>
+              <td style="padding: 15px;">Residential</td>
+              <td style="padding: 15px;"><span style="background: #d4edda; color: #155724; padding: 5px 10px; border-radius: 3px;">Completed</span></td>
+              <td style="padding: 15px;">100%</td>
+              <td style="padding: 15px;"><a href="#" style="color: var(--primary-color); font-weight: bold;">View →</a></td>
+            </tr>
+            <tr style="border-bottom: 1px solid #ddd;">
+              <td style="padding: 15px;">Industrial Warehouse Facility</td>
+              <td style="padding: 15px;">Industrial</td>
+              <td style="padding: 15px;"><span style="background: #cfe2ff; color: #084298; padding: 5px 10px; border-radius: 3px;">Planning</span></td>
+              <td style="padding: 15px;">25%</td>
+              <td style="padding: 15px;"><a href="#" style="color: var(--primary-color); font-weight: bold;">View →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Quick Actions -->
+      <div style="margin-top: 60px;">
+        <h2 class="section-title">Quick Actions</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+          <button class="btn" style="padding: 15px; font-size: 16;">Request a Quote</button>
+          <button class="btn" style="padding: 15px; font-size: 16;">Schedule Consultation</button>
+          <button class="btn" style="padding: 15px; font-size: 16;">View Services</button>
+          <button class="btn" style="padding: 15px; font-size: 16;">Contact Support</button>
+        </div>
+      </div>
+
+      <!-- Documents Section -->
+      <div style="margin-top: 60px;">
+        <h2 class="section-title">Recent Documents</h2>
+        <div style="background: white; border-radius: 8px; box-shadow: var(--shadow); padding: 20px;">
+          <div style="display: grid; gap: 15px;">
+            <div style="display: flex; align-items: center; padding: 15px; border-bottom: 1px solid #ddd;">
+              <span style="font-size: 30px; margin-right: 15px;">📄</span>
+              <div style="flex: 1;">
+                <p style="font-weight: bold; margin: 0;">Project Proposal - Commercial Plaza</p>
+                <p style="font-size: 14px; color: #666; margin: 5px 0;">Updated 2 days ago</p>
+              </div>
+              <a href="#" style="color: var(--primary-color); font-weight: bold;">Download</a>
+            </div>
+            <div style="display: flex; align-items: center; padding: 15px; border-bottom: 1px solid #ddd;">
+              <span style="font-size: 30px; margin-right: 15px;">📋</span>
+              <div style="flex: 1;">
+                <p style="font-weight: bold; margin: 0;">Contract Agreement - Residential Estate</p>
+                <p style="font-size: 14px; color: #666; margin: 5px 0;">Updated 1 week ago</p>
+              </div>
+              <a href="#" style="color: var(--primary-color); font-weight: bold;">Download</a>
+            </div>
+            <div style="display: flex; align-items: center; padding: 15px;">
+              <span style="font-size: 30px; margin-right: 15px;">📊</span>
+              <div style="flex: 1;">
+                <p style="font-weight: bold; margin: 0;">Budget Report - Industrial Warehouse</p>
+                <p style="font-size: 14px; color: #666; margin: 5px 0;">Updated 3 days ago</p>
+              </div>
+              <a href="#" style="color: var(--primary-color); font-weight: bold;">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <h3 style="color: var(--secondary-color); margin-bottom: 15px;">Idoko Contech Construction</h3>
+      <p>Building dreams, Creating futures</p>
+      <p>📞 +234 (0) 700 000 0000 | 📧 info@idokocontech.com | 📍 Lagos, Nigeria</p>
+      <p style="margin-top: 20px; font-size: 14px;">© 2026 Idoko Contech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="public/js/script.js"></script>
+</body>
+</html>
